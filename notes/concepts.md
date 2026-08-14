@@ -8,6 +8,8 @@
     INSERT         SELECT       UPDATE        DELETE
 ```
 
+## CRUD operation relies on :
+
 | Operation  | CRUD meaning        | SQL      |
 | ---------- | ------------------- | -------- |
 | **Create** | Create a new record | `INSERT` |
