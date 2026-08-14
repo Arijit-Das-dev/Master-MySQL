@@ -1,5 +1,5 @@
 -- step 1
-CREATE DATABASE database_name;
+CREATE DATABASE students_database;
 
 -- step 2
-USE database_name;
+USE students_database;

@@ -5,7 +5,7 @@
 ### QUERY
 ```sql
 
--- step 1
+-- SQL COMMAND
 CREATE TABLE students(
 	id INT AUTO_INCREMENT PRIMARY KEY,
     name VARCHAR(100) NOT NULL,

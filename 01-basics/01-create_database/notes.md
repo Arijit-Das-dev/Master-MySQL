@@ -4,6 +4,7 @@
 
 ### QUERY
 ```sql
+-- SQL COMMAND
 -- step 1 - create database
 CREATE DATABASE database_name;
 
