@@ -4,9 +4,9 @@
 
 ### QUERY
 ```sql
--- step 1
+-- step 1 - create database
 CREATE DATABASE database_name;
 
--- step 2
+-- step 2 - activate database
 USE database_name;
 ```
