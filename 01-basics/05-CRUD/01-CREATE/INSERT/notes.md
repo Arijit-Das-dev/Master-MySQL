@@ -1,9 +1,11 @@
 ## CRUD -> CREATE Operation
 - Create operation relies on inserting data into existing table.
+- This is also called bulk inserting.
+- Inserting multiple rows by using INSERT INTO statement improves efficiency and reduces multiple query operation.
 
 - Syntax :
-```
-INSERT INTO table (col1, col2,...., coln) VALUES
+```sql
+INSERT INTO table_name (col1, col2,...., coln) VALUES
 (val1, val2, ...., valn)
 ```
 
