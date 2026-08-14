@@ -1,4 +1,4 @@
-## CRUD -> CREATE Operation
+## CRUD -> CREATE Operation (INSERT)
 - Create operation relies on inserting data into existing table.
 - This is also called bulk inserting.
 - Inserting multiple rows by using INSERT INTO statement improves efficiency and reduces multiple query operation.
