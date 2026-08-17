@@ -14,7 +14,7 @@ INSERT INTO users (name, email, gender, date_of_birth, salary) VALUES
 ('Tanvi', 'tanvi@example.com', 'Female', '1994-04-18', 62000.00),
 ('Rohan', 'rohan@example.com', 'Male', '1986-12-01', 75000.00),
 ('Zoya', 'zoya@example.com', 'Female', '1998-01-15', 54000.00),
-('Karan', 'karan@example.com', 'Male', '1990-08-22', 68000.00),
+('Karan', 'karan@example.com', 'Male', '1990-08-22' , 68000.00),
 ('Nikita', 'nikita@example.com', 'Female', '1987-03-10', 71000.00),
 ('Manav', 'manav@example.com', 'Male', '1996-11-29', 61000.00),
 ('Divya', 'divya@example.com', 'Female', '1991-02-28', 57000.00),
