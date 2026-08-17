@@ -27,6 +27,9 @@ ALTER TABLE students MODIFY COLUMN name VARCHAR(70) NOT NULL;
 -- Moving column's position by using ALTER
 ALTER TABLE students MODIFY COLUMN email VARCHAR(100) FIRST;    -- have to specify the data type of the column
 ALTER TABLE students MODIFY COLUMN email VARCHAR(100) AFTER id;
+
+-- Chaning column names
+ALTER TABLE students CHANGE COLUMN name full_name VARCHAR(50) NOT NULL;
 ```
 ---
 
