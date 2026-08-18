@@ -4,6 +4,7 @@
 
 ### SYNTAX :
 ```sql
+-- SQL COMMANDS
 
 -- CREATE database
 CREATE DATABASE database_name;

@@ -1,8 +1,9 @@
 ## DROP DATABASE
 - We can drop the database by using this command,
 
-### QUERY
+### SYNTAX :
 ```sql
--- SQL COMMAND
+-- SQL COMMANDS
+
 DROP DATABASE students_database;
 ```
