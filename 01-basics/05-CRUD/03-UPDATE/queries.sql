@@ -1,4 +1,4 @@
--- UPDATE statement to modify existing records in a table
+-- UPDATE - To modify existing records in a table.
 
 -- increase salary upto 10,000 where salary less than 10,000
 UPDATE employees_table
@@ -25,6 +25,8 @@ WHERE gender = 'Female';
 -- adding column
 ALTER TABLE employees_table
 ADD COLUMN bonus INT NOT NULL;
+
+
 
 -- adding bonus 10%
 UPDATE employees_table
