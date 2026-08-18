@@ -5,6 +5,9 @@
 ### Syntax
 
 ```sql
+-- SQL COMMANDS
+
+
 SELECT column_name
 FROM table_name
 LIMIT number OFFSET number;

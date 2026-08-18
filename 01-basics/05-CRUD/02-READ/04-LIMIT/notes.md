@@ -4,6 +4,9 @@
 
 ### Syntax
 ```sql
+-- SQL COMMANDS
+
+
 SELECT column_name
 FROM table_name
 LIMIT number;
@@ -11,7 +14,7 @@ LIMIT number;
 
 ### QUERY
 ```sql
--- SQL commands
+-- SQL COMMANDS
 
 -- Top 5 rows
 SELECT * FROM users

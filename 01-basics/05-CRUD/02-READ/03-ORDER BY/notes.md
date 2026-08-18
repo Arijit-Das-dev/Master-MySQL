@@ -2,7 +2,8 @@
 - ORDER BY clause helps in sorting according to ascending order or discending order.
 
 ```sql
--- SQL commands
+-- SQL COMMANDS
+
 
 -- sort all values based on date_of_birth in ascending order.
 SELECT * FROM users

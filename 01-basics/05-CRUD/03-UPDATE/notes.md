@@ -4,6 +4,8 @@
 
 ### SYNTAX :
 ```sql
+-- SQL COMMANDS
+
 
 UPDATE table_name
 SET column 

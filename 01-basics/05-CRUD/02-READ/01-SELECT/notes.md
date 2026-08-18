@@ -3,6 +3,8 @@
 
 - Syntax :
 ```sql
+-- SQL COMMANDS
+
 
 -- sql command
 SELECT * FROM table_name;

@@ -3,6 +3,8 @@
 
 ## Syntax :
 ```sql
+-- SQL COMMANDS
+
 
 DELETE FROM table_name
 WHERE condition;

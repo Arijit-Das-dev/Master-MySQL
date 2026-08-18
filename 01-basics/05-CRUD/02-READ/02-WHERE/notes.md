@@ -4,7 +4,8 @@
 
 ### QUERY :
 ```sql
--- SQL commands
+-- SQL COMMANDS
+
 
 -- selecting name where id is 1
 SELECT name FROM users WHERE id = 1;
