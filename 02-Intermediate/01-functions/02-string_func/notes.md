@@ -3,6 +3,7 @@
 - By the use of this functions we can clean, analyse and transform chatagorical columns.
 
 ### List of string functions :
+```
 STRING FUNCTIONS
 │
 ├── Combine
@@ -42,3 +43,4 @@ STRING FUNCTIONS
 │
 └── Compare
     └── STRCMP()
+```
