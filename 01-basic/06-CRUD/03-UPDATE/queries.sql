@@ -21,7 +21,7 @@ WHERE gender = 'Female';
 
 
 
--- add a column bonus and add 10% bonus to the all user's salary whom salary < 10,000
+-- add a column bonus and add 10% bonus to the all user's salary where salary < 10,000
 -- adding column
 ALTER TABLE employees_table
 ADD COLUMN bonus INT NOT NULL;
