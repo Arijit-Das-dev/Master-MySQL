@@ -1,4 +1,4 @@
-## FUNCTIONS - Aggregate functions
+## Aggregate functions
 
 | Functions      | What they do ?                        |
 | -------------- | ------------------------------------- |
@@ -6,4 +6,5 @@
 | **SUM()**      | `Adds numeric values`                 |
 | **AVG()**      | `Gives average value`                 |
 | **MIN()**      | `Gives minimum numeric value`         |
-| **Mx()**       | `Gives maximum numeric value`         |
+| **MAX()**      | `Gives maximum numeric value`         |
+---
