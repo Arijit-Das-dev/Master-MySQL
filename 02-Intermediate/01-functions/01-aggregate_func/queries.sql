@@ -31,3 +31,9 @@ SELECT dept, avg(salary) AS average_salary FROM users GROUP BY dept;
 
 -- get which dept pays the most highest salary.
 SELECT dept FROM users WHERE salary = (SELECT max(salary) AS maximum_salary FROM users);
+
+-- get the salary range between 1 standard daviation
+SELECT * FROM users WHERE salary BETWEEN(
+SELECT round(avg(salary) - std(salary)) FROM users)
+AND
+(SELECT round(avg(salary) + std(salary)) FROM users);
