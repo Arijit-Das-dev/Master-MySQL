@@ -43,8 +43,8 @@ STRING FUNCTIONS
 │
 │
 ├── Measure
-│   ├── LENGTH()        <- measures the length of each string values
-│   └── CHAR_LENGTH()
+│   ├── LENGTH()        <- measures the bytes of a character
+│   └── CHAR_LENGTH()   <- mearures the length of a string
 │
 │
 │
@@ -135,4 +135,10 @@ UPDATE users SET names = REGEXP_REPLACE(names, '[0-9]', '');
 
 -- replace a whole string
 UPDATE users SET names = REPLACE(names, 'Dev id', 'Devid');
+```
+
+### 6. Measures
+```sql
+
+SELECT LENGTH(names), CHAR_LENGTH(names) FROM users;
 ```
