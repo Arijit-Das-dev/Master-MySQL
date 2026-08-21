@@ -19,6 +19,7 @@ STRING FUNCTIONS
 │   ├── LTRIM()             <- removes left side spaces
 │   ├── RTRIM()             <- removes right side spaces
 │   └── REPLACE()           <- replaces a string with another string
+|   └── REGEXP_REPLACE()    <- replaces things inside a string
 │
 ├── Extract
 │   ├── LEFT()
@@ -99,4 +100,15 @@ SELECT names FROM users WHERE names REGEXP('[^A-Za-z]');
 
 -- check for numbers
 SELECT names FROM users WHERE names REGEXP('[0-9]');
+```
+
+```sql
+
+-- Now update
+
+-- remove trailing spaces
+UPDATE users SET names = TRIM(names);
+
+-- remove inside spaces
+UPDATE users SET names = REGEXP_REPLACE(name, )
 ```
