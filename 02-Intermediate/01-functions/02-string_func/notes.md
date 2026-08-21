@@ -10,16 +10,22 @@ STRING FUNCTIONS
 │   ├── CONCAT()            <- Joins two seperate strings into ones
 │   └── CONCAT_WS()         <- Joins two strings with a seperator
 │
+│
+│
 ├── Case
 │   ├── UPPER()             <- convert into upper case
 │   └── LOWER()             <- convert into lower case
+│
+│
 │
 ├── Clean
 │   ├── TRIM()              <- removes leading and trailing spaces
 │   ├── LTRIM()             <- removes left side spaces
 │   ├── RTRIM()             <- removes right side spaces
 │   └── REPLACE()           <- replaces a string with another string
-|   └── REGEXP_REPLACE()    <- replaces things inside a string
+|   └── REGEXP_REPLACE()    <- do changes inside a string
+│
+│
 │
 ├── Extract
 │   ├── LEFT()
@@ -27,20 +33,28 @@ STRING FUNCTIONS
 │   ├── SUBSTRING()
 │   └── SUBSTRING_INDEX()
 │
+│
+│
 ├── Search
 │   ├── LOCATE()
 │   ├── INSTR()
 │   └── POSITION()
 │
+│
+│
 ├── Measure
-│   ├── LENGTH()
+│   ├── LENGTH()        <- measures the length of each string values
 │   └── CHAR_LENGTH()
+│
+│
 │
 ├── Modify
 │   ├── LPAD()
 │   ├── RPAD()
 │   ├── REPEAT()
 │   └── REVERSE()
+│
+│
 │
 └── Compare
     └── STRCMP()
@@ -85,6 +99,7 @@ UPDATE users SET names = lower(names);
 - Cleaning methods are specially used for data cleaning
 
 ```sql
+-- check for errors
 
 -- check for leading or trailing spaces
 SELECT names FROM users WHERE names != TRIM(names);
