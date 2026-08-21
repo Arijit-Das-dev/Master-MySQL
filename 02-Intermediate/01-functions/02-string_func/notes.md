@@ -7,8 +7,8 @@
 STRING FUNCTIONS
 │
 ├── Combine
-│   ├── CONCAT()
-│   └── CONCAT_WS()
+│   ├── CONCAT()            <- Joins two seperate strings into ones
+│   └── CONCAT_WS()         <- Joins two strings with a seperator
 │
 ├── Case
 │   ├── UPPER()
@@ -44,3 +44,21 @@ STRING FUNCTIONS
 └── Compare
     └── STRCMP()
 ```
+## SYNTAX :
+### 1. Combine
+```sql
+
+-- CONCAT()
+ SELECT CONCAT(
+    string1,
+    string2
+);
+
+-- CONCAT_WS()
+SELECT CONCAT_WS(
+    ' ',
+    string1,
+    string2
+)
+```
+
