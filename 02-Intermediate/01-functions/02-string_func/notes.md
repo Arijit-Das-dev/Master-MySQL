@@ -11,14 +11,14 @@ STRING FUNCTIONS
 │   └── CONCAT_WS()         <- Joins two strings with a seperator
 │
 ├── Case
-│   ├── UPPER()
-│   └── LOWER()
+│   ├── UPPER()             <- convert into upper case
+│   └── LOWER()             <- convert into lower case
 │
 ├── Clean
-│   ├── TRIM()
-│   ├── LTRIM()
-│   ├── RTRIM()
-│   └── REPLACE()
+│   ├── TRIM()              <- removes leading and trailing spaces
+│   ├── LTRIM()             <- removes left side spaces
+│   ├── RTRIM()             <- removes right side spaces
+│   └── REPLACE()           <- replaces a string with another string
 │
 ├── Extract
 │   ├── LEFT()
@@ -62,3 +62,41 @@ SELECT CONCAT_WS(
 )
 ```
 
+### 2. Case
+- Case functions are specially used in data cleaning.
+
+```sql
+
+-- LOWER()
+SELECT lower(column) AS column_names FROM users;
+
+-- UPPER()
+SELECT upper(column) AS column_names FROM users;
+
+-- To check for upper case letters
+SELECT names FROM users WHERE names != lower(names);
+
+-- update those namess which starts with upper case letters
+UPDATE users SET names = lower(names);
+```
+
+### 3. Clean
+- Cleaning methods are specially used for data cleaning
+
+```sql
+
+-- check for leading or trailing spaces
+SELECT names FROM users WHERE names != TRIM(names);
+
+-- check for left side spaces
+SELECT names FROM users WHERE names != LTRIM(names);
+
+-- check for right side spaces
+SELECT names FROM users WHERE names != RTRIM(names);
+
+-- check for special characters
+SELECT names FROM users WHERE names REGEXP('[^A-Za-z]');
+
+-- check for numbers
+SELECT names FROM users WHERE names REGEXP('[0-9]');
+```

@@ -78,6 +78,7 @@ SELECT * FROM users WHERE age NOT IN (50, 60, 70);
 
 
 -- 6. Pattern matching & sorting
-SELECT email FROM users WHERE email LIKE 'a%';  -- returns values of email column where value starts with letter 'a'
-SELECT email FROM users WHERE email LIKE '%a';  -- returns values of email column where value ends with letter 'a'
-SELECT name FROM users WHERE name LIKE '%R%';   -- returns only those values in name column which contains letter 'R'
+SELECT email FROM users WHERE email LIKE 'a%';              -- returns values of email column where value starts with letter 'a'
+SELECT email FROM users WHERE email LIKE '%a';              -- returns values of email column where value ends with letter 'a'
+SELECT name FROM users WHERE name LIKE '%R%';               -- returns only those values in name column which contains letter 'R'
+SELECT name FROM users WHERE name REGEXP '[^a-zA-Z0-9]';    -- checks for specific things.

@@ -26,7 +26,7 @@ SELECT * FROM users WHERE name = 'devid';
 | **Logical**    | `AND`, `OR`, `NOT`                    | `age > 18 AND city = 'Kolkata'` |
 | **Range**      | `BETWEEN`                             | `age BETWEEN 18 AND 25`         |
 | **Membership** | `IN`, `NOT IN`                        | `city IN ('Kolkata','Delhi')`   |
-| **Pattern**    | `LIKE`, `NOT LIKE`                    | `name LIKE 'A%'`                |
+| **Pattern**    | `LIKE`, `NOT LIKE`, `REGEXP`          | `name LIKE 'A%'`                |
 | **Null**       | `IS NULL`, `IS NOT NULL`              | `email IS NULL`                 |
 | **Existence**  | `EXISTS`, `NOT EXISTS`                | `WHERE EXISTS (...)`            |
 ---
