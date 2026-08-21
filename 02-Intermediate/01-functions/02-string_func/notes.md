@@ -110,5 +110,14 @@ SELECT names FROM users WHERE names REGEXP('[0-9]');
 UPDATE users SET names = TRIM(names);
 
 -- remove inside spaces
-UPDATE users SET names = REGEXP_REPLACE(name, )
+UPDATE users SET names = REGEXP_REPLACE(names, ' ', '_');
+
+-- remove special characters
+UPDATE users SET names = REGEXP_REPLACE(names, '[^A-Za-z_]', '');
+
+-- remove numbers
+UPDATE users SET names = REGEXP_REPLACE(names, '[0-9]', '');
+
+-- replace a whole string
+UPDATE users SET names = REPLACE(names, 'Dev id', 'Devid');
 ```
