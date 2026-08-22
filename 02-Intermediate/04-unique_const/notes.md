@@ -1,4 +1,4 @@
-# UNIQUE CONSTRAINTS
+# UNIQUE CONSTRAINT
 - UNIQUE is a CONSTRAINTS which is used to identify a column uniquely
 
 ## What is UNIQUE ?
