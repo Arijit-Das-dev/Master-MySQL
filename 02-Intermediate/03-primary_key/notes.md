@@ -17,3 +17,10 @@ CREATE TABLE users(
     id INT AUTO_INCREMENT PRIMARY KEY;
 )
 ```
+
+## How to drop a PRIMARY KEY ?
+```sql
+
+ALTER TABLE users 
+DROP PRIMARY KEY;
+```
