@@ -42,3 +42,19 @@ CREATE TABLE address(
             |                                   |
         PRIMARY KEY     <- references       FOREIGN KEY
 ```
+
+## DROP a FOREIGN KEY
+```sql
+ALTER TABLE users
+DROP FOREIGN KEY
+fk_user;
+```
+
+## ADD a FOREIGN KEY
+```sql
+ALTER TABLE users
+ADD CONSTRAINT fk_user
+FOREIGN KEY (user_id)
+REFERENCES users(id)
+ON DELETE CASCADE;
+```
