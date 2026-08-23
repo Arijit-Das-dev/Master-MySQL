@@ -21,3 +21,6 @@ CREATE TABLE address(
     ON DELETE CASCADE
 );
 ```
+**NOTE :**
+- What is ***CONSTRAINT fk_user*** ?
+    - When we are setting a column FOREIGN KEY, we set a CONSTRAINT of that column so that we can modify through it anytime.
