@@ -10,7 +10,6 @@ USE database_name;
 
 -- create table
 CREATE TABLE address(
-
     id INT AUTO_INCREMENT PRIMARY KEY,
     user_id INT,
     states VARCHAR(20) NOT NULL,
@@ -58,3 +57,10 @@ FOREIGN KEY (user_id)
 REFERENCES users(id)
 ON DELETE CASCADE;
 ```
+
+
+## Summary :
+- Foreign key is used to connect two tables.
+- Can be added while creating tables or after being created.
+- Can be drop anytime by it's CONSTRAINT.
+- Use **ON DELETE CASCADE** to control two tables simultaniously.
