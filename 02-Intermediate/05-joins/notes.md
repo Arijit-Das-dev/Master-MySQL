@@ -51,7 +51,7 @@ ON users.id = addresses.user_id;
     ```
 
 ### 2. LEFT JOIN
-- ***LEFT JOIN*** takes all the values of left table and sets null in those rows of right table where the values does not match with left table.
+- ***LEFT JOIN*** takes all the values from the left table and sets null in those rows of right table where the values does not match with left table.
     - Syntax :
     ```sql
     SELECT users.*, addresses.*
@@ -59,4 +59,15 @@ ON users.id = addresses.user_id;
     LEFT JOIN addresses
     ON 
     users.id = addresses.user_id;
-    ``` 
+    ```
+
+### 3. RIGHT JOIN
+- ***RIGHT JOIN*** takes all the values from right table and sets null in those rows of left table where the values does not match.
+    - Syntax :
+    ```sql
+    SELECT users.*, addresses.*
+    FROM users
+    RIGHT JOIN addresses
+    ON 
+    users.id = addresses.user_id;
+    ```
