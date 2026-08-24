@@ -1,6 +1,6 @@
 # JOINS
 - **JOINS** are used to COMBINE multiple tables.
-- By the help of **FOREIGN KEY** and **PRIMARY KEY**, we can make tables working together by combining them.
+- By the help of **FOREIGN KEY** and **PRIMARY KEY**, we can make tables work together by combining them.
 
 ## Process of joining tables.
 ```sql
