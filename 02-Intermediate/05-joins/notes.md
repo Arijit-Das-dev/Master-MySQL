@@ -39,13 +39,24 @@ ON users.id = addresses.user_id;
 - **RIGHT JOIN**
 ---
 
-### INNER JOIN
+### 1. INNER JOIN
 - ***INNER JOIN*** picks all the common values from multiple tables.
     - Syntax :
-        ```sql
-        SELECT users.*, addresses.*
-        FROM users
-        INNER JOIN addresses
-        ON 
-        users.id = addresses.user_id;
-        ```
+    ```sql
+    SELECT users.*, addresses.*
+    FROM users
+    INNER JOIN addresses
+    ON 
+    users.id = addresses.user_id;
+    ```
+
+### 2. LEFT JOIN
+- ***LEFT JOIN*** takes all the values of left table and sets null in those rows of right table where the values does not match with left table.
+    - Syntax :
+    ```sql
+    SELECT users.*, addresses.*
+    FROM users
+    LEFT JOIN addresses
+    ON 
+    users.id = addresses.user_id;
+    ``` 
