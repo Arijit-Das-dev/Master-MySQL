@@ -37,3 +37,15 @@ ON users.id = addresses.user_id;
 - **INNER JOIN**
 - **LEFT JOIN**
 - **RIGHT JOIN**
+---
+
+### INNER JOIN
+- ***INNER JOIN*** picks all the common values from multiple tables.
+    - Syntax :
+        ```sql
+        SELECT users.*, addresses.*
+        FROM users
+        INNER JOIN addresses
+        ON 
+        users.id = addresses.user_id;
+        ```
