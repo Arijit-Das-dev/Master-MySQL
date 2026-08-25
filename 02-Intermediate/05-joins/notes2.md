@@ -1,10 +1,11 @@
 # MULTIPLE JOINS 
-- Suppose there are multiple tables present in a database, and you have to join them based on columns.
-
+- Suppose there are multiple tables present in a database, and you have to join them based on common columns.
+- We joins tables depending on primary keys and foreign keys.
+- There will always be a connector table which will store foreign keys containing columns (primary keys of other tables).
 
 ## Example :
 ```
-Table 1 -> customers
+Table 1 -> customers  [primary key -> customer_id]
 --------------------
  _______________________________________
 |customer_id      |       customer_name |
@@ -17,7 +18,7 @@ Table 1 -> customers
 |_________________|_____________________|
 
 
-Table 2 -> products
+Table 2 -> products  [primary key -> product_id]
 --------------------
  _______________________________________
 |prouct_id        |       product_name  |
@@ -31,7 +32,7 @@ Table 2 -> products
 
 
 
-Table 3 -> orders
+Table 3 -> orders     [foreign keys -> customer_id, product_id]
 --------------------
  __________________________________________
 |order_id   |   customer_id |   product_id |
@@ -43,3 +44,29 @@ Table 3 -> orders
 |1005       |        5      |     105      |
 |___________|_______________|______________|
 ```
+- Customers have primary key **customer_id**.
+- products have primary key **products_id**.
+- orders have foreign key **customer_id, product_id**.
+
+## Syntax :
+- You have to join them based on that syntax -
+
+```sql
+-- sql commands
+SELECT customers.*, products.*, orders.*
+    FROM customers c
+JOIN orders o
+    ON c.customer_id = o.customer_id
+JOIN products p
+    ON p.product_id = o.product_id;
+```
+
+## MINDMAP :
+```
+customers customer_id -> orders customers_id
+products product_id -> orders product_id
+```
+
+## Workflow :
+- Find common table which contains foreign keys.
+- Based on that join other tables using primary keys.
