@@ -62,10 +62,12 @@ JOIN products p
 ```
 
 ## MINDMAP :
-```
-customers customer_id -> orders customers_id
-products product_id -> orders product_id
-```
+
+``customers customer_id -> orders customers_id``
+``products product_id -> orders product_id``
+
+- Here orders table contains all the foreign keys.
+
 
 ## Workflow :
 - Find common table which contains foreign keys.
