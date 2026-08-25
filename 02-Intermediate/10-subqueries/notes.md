@@ -17,3 +17,14 @@ FROM users);
 
 - The inner query -> calculates average salary
 - The outer query -> selects all values greater than average salary
+
+## Other Places Subqueries Are Used
+- You can also use subqueries:
+    - Inside SELECT columns (called scalar subqueries)
+    - In the FROM clause to create derived tables
+
+```sql
+SELECT name, salary,
+    (SELECT AVG(salary) FROM users) AS average_salary
+FROM users;
+```
