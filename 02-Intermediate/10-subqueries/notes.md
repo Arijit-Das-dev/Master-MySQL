@@ -14,3 +14,6 @@ SELECT * FROM users
 WHERE salary > (SELECT avg(salary) AS average_salary
 FROM users);
 ```
+
+- The inner query -> calculates average salary
+- The outer query -> selects all values greater than average salary
