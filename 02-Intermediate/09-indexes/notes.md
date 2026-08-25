@@ -19,13 +19,13 @@ UNIQUE INDEX        DUPLICATE INDEX
 
 ## UNIQUE INDEX
 - **UNIQUE INDEX** are the columns which does not contains any duplicate values or rows.
-    ***Example*** -> emails, id, adhaar number, pan number.
+    - ***Example*** -> emails, id, adhaar number, pan number.
 
 - **UNIQUE INDEX** are specially used with non-duplicate values.
 
 ## DUPLICATE INDEX
 -   **DUPLICATE INDEX** are the columns which contains duplicate values or rows.
-    ***Example*** -> name, gender, date_of_birth.
+    - ***Example*** -> name, gender, date_of_birth.
 
 ## How to create INDEX ?
 ```sql
