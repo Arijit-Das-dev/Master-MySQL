@@ -4,6 +4,12 @@
 - MySQL automatically creates **INDEXES** if we dont create it manually.
 - There are two types of **INDEXES**.
 
+## Example :
+- Suppose you are reading a book and there are total 10 chapters with 500 pages. Then how can you get any specific page or chapter ?
+- You can get those pages by the book's INDEX where all the chapters details are given.
+- Same as in MySQL, indexes helps use to retrieve specific data from the entire dataset.
+- We set INDEXES through some specific columns.
+
 ## SHOW INDEXES :
 ```sql
 SHOW INDEXES FROM users;
@@ -49,6 +55,7 @@ CREATE INDEX idx_email ON users(email);
 ## DROP index 
 ```sql
 
+-- always specify the index indentifier
 ALTER TABLE users
-DROP INDEX email;
+DROP INDEX idx_email;
 ```
