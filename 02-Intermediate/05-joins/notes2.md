@@ -66,7 +66,7 @@ JOIN products p
 ``customers customer_id -> orders customers_id``
 ``products product_id -> orders product_id``
 
-- Here orders table contains all the foreign keys.
+- Here orders table contains all the foreign keys. So orders table is the connector of both the tables.
 
 
 ## Workflow :
