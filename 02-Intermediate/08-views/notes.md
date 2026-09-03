@@ -70,3 +70,41 @@ id      name    salary |
 ```sql
 DROP VIEW new_ids;
 ```
+
+### NOTE :
+- **VIEWS** does not allow any duplicate columns during joining tables.
+
+```sql
+-- wrong approach - here you are taking two same columns from both tables without using aliases.
+-- error :  Duplicate column name 'customer_id'.
+
+CREATE INDEX all_tables AS
+SELECT 
+
+p.product_id,   -- DUPLICATE
+p.product_name,
+o.product_id,   -- DUPLICATE
+o.order_date
+
+FROM product p
+JOIN orders o
+
+ON p.product_id = o.product_id;
+```
+
+```sql
+-- correct approach - always use aliases during selecting column names.
+
+CREATE INDEX all_tables AS
+SELECT 
+
+p.product_id AS product_id,   -- DUPLICATE
+p.product_name AS product_name,
+o.product_id AS product_id,   -- DUPLICATE
+o.order_date AS order_date
+
+FROM product p
+JOIN orders o
+
+ON p.product_id = o.product_id;
+```
