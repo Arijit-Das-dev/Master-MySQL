@@ -3,6 +3,9 @@
 - It became usefull when we want to retrieve data faster.
 - MySQL automatically creates **INDEXES** if we dont create it manually.
 - There are two types of **INDEXES**.
+- **INDEXES** can be created in both type of columns - 
+    - **unique value containing columns** - **CREATE UNIQUE INDEX**
+    - **duplicate value containing columns** - **CREATE INDEX**
 
 ## Example :
 - Suppose you are reading a book and there are total 10 chapters with 500 pages. Then how can you get any specific page or chapter ?
