@@ -35,3 +35,14 @@ FORMATTING
 
 ### CURRENT DATE/TIME
 - ***CURDATE()*** = gives the current date. (YYYY-MM-D)
+- ***CURTIME()*** = Gives the current time. (h-i-t)
+- ***NOW()*** = Gives the current date + current time. (YYYY-MM-D + H-I-S)
+
+```sql
+SELECT CURDATE();
+SELECT CURTIME();
+SELECT NOW();
+```
+
+### EXTRACTION
+- 
