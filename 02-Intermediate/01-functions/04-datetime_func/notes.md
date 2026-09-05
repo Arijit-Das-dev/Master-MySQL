@@ -70,3 +70,11 @@ SELECT SECOND(NOW());   -- or SECOND(CURTIME())
 ```sql
 SELECT DATEDIFF(DAY_FIRST, DAY_LAST) AS total_days;
 ```
+
+### FORMATTING
+- Used to fix date timing.
+
+```sql
+UPDATE users
+SET dates = DATE_FORMAT(dates, '%Y-%m-%d');
+```
