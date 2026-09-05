@@ -24,13 +24,10 @@ EXTRACTION
 
 CALCULATION
 ├── DATEDIFF()
-├── TIMEDIFF()
-├── TIMESTAMPDIFF()
 
 
 FORMATTING
 ├── DATE_FORMAT()
-└── EXTRACT()
 ```
 
 ### CURRENT DATE/TIME
@@ -45,4 +42,11 @@ SELECT NOW();
 ```
 
 ### EXTRACTION
-- 
+- ***YEAR()*** = Gives the year in numbers.
+- ***MONTH()*** = Gives the month in number.
+- ***DAY*** = Gives the day in number.
+- ***DAYNAME*** = Gives the day in name.
+- ***MONTHNAME*** = Gives the month name.
+- ***HOUR*** = Gives the hour.
+- ***MINUTE*** = Gives time in minutes.
+- ***SECOND*** = Gives time in seconds.
