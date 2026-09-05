@@ -63,3 +63,10 @@ SELECT HOUR(NOW());     -- or HOUR(CURTIME())
 SELECT MINUTE(NOW());   -- or MINUTE(CURTIME())
 SELECT SECOND(NOW());   -- or SECOND(CURTIME())
 ```
+
+### CALCULATION
+- ***DATEDIFF()*** = Gives the specific difference between dates.
+
+```sql
+SELECT DATEDIFF(DAY_FIRST, DAY_LAST) AS total_days;
+```
