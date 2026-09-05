@@ -1,4 +1,4 @@
-## Data time functions
+# Data time functions
 - It is used to work with data and time in a dataset.
 
 
@@ -26,19 +26,12 @@ CALCULATION
 ├── DATEDIFF()
 ├── TIMEDIFF()
 ├── TIMESTAMPDIFF()
-├── DATE_ADD()
-└── DATE_SUB()
-
 
 
 FORMATTING
 ├── DATE_FORMAT()
 └── EXTRACT()
-
-
-
-OTHER
-├── LAST_DAY()
-├── WEEK()
-└── QUARTER()
 ```
+
+### CURRENT DATE/TIME
+- ***CURDATE()*** = gives the current date. (YYYY-MM-D)
