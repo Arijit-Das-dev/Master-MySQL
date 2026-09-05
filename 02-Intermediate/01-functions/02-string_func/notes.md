@@ -27,14 +27,6 @@ STRING FUNCTIONS
 │
 │
 │
-├── Extract
-│   ├── LEFT()
-│   ├── RIGHT()
-│   ├── SUBSTRING()
-│   └── SUBSTRING_INDEX()
-│
-│
-│
 ├── Search
 │   ├── LOCATE()
 │   ├── INSTR()
@@ -137,7 +129,16 @@ UPDATE users SET names = REGEXP_REPLACE(names, '[0-9]', '');
 UPDATE users SET names = REPLACE(names, 'Dev id', 'Devid');
 ```
 
-### 6. Measures
+### 4. SEARCH
+- Search functions are used to search specific values from table.
+
+```sql
+-- LOCATE()
+SELECT id FROM users
+WHERE LOCATE(names, 'Devid');
+```
+
+### 5. Measures
 ```sql
 
 SELECT LENGTH(names), CHAR_LENGTH(names) FROM users;
