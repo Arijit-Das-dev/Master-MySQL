@@ -38,7 +38,6 @@ FORMATTING
 ```sql
 SELECT CURDATE();
 SELECT CURTIME();
-
 SELECT NOW();
 ```
 
@@ -51,3 +50,16 @@ SELECT NOW();
 - ***HOUR*** = Gives the hour.
 - ***MINUTE*** = Gives time in minutes.
 - ***SECOND*** = Gives time in seconds.
+
+```sql
+SELECT YEAR(CURDATE());
+SELECT MONTH(CURDATE());
+SELECT DATE(CURDATE());
+
+SELECT MONTHNAME(CURDATE());
+SELECT DAYNAME(CURDATE());
+
+SELECT HOUR(NOW());     -- or HOUR(CURTIME())
+SELECT MINUTE(NOW());   -- or MINUTE(CURTIME())
+SELECT SECOND(NOW());   -- or SECOND(CURTIME())
+```
